@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Changer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px 100px;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 18px;
+        text-align: justify;
+      }
+      .btn {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border: solid grey 2px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #white {
+        background-color: white;
+      }
+      #aqua {
+        background-color: aquamarine;
+      }
+      #violet {
+        background-color: #ce9aff;
+      }
+      #black {
+        background-color: black;
+      }
+      #color-switcher {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="color-switcher">
+      <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+      <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+      <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+      <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="build.jpg" alt="" />
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora culpa
+      laudantium consequatur provident quo? Maiores, velit explicabo perferendis
+      itaque nesciunt voluptate cupiditate? Voluptatibus reprehenderit culpa
+      corrupti recusandae doloribus vitae a esse nam voluptates hic alias id
+      fuga quis magni eius, odit repudiandae placeat. Asperiores quam dolor vero
+      quibusdam dolorem sequi harum excepturi fugit facilis commodi unde eveniet
+      ea eius vel ipsa repellat eum ipsum temporibus illum, possimus aliquid
+      adipisci omnis? Veritatis rerum at dicta blanditiis vero, reiciendis esse
+      tenetur vel? Cum esse unde, hic temporibus quaerat molestiae, rerum id
+      quis nostrum iste ipsa corporis itaque libero incidunt. Ducimus, magni!
+      Sapiente, animi laborum sed repellat temporibus nam earum eaque maxime
+      culpa cupiditate vel ullam accusantium! Cumque nemo ex sunt, facilis dolor
+      iusto quaerat, labore aperiam saepe excepturi nihil. Dolores culpa sit a
+      ab illum iste molestias nisi id, officia non modi ad consequuntur veniam
+      porro corrupti recusandae labore exercitationem, hic optio quae cumque
+      iure vel repellendus nulla! Laboriosam, corrupti, ipsam esse laborum
+      numquam recusandae alias a officia et quas ex est perferendis eius vitae
+      debitis dignissimos distinctio similique. Quia quod, sed totam illum sequi
+      optio maiores delectus ad saepe. Veniam eligendi nisi sequi iure qui natus
+      possimus numquam, quaerat, quod ut repellendus id. Sunt ea dicta alias
+      velit laboriosam sapiente. Error, maxime? Voluptatum perspiciatis
+      temporibus obcaecati architecto odio dolore, aspernatur ratione accusamus
+      porro facere ex fugit tempore quos vel velit. Quibusdam libero obcaecati
+      tempora accusantium a ad voluptatem, quasi rem nemo beatae error at.
+      Necessitatibus recusandae et delectus earum. Minus deserunt veritatis eos
+      tempora vero at corrupti repudiandae laudantium? Temporibus fuga magnam
+      blanditiis minus! Consequuntur vitae dolores at sint atque necessitatibus
+      nam architecto aperiam! Quasi magni saepe eius ratione atque asperiores
+      totam, reprehenderit unde repellendus libero ipsam non illum amet minima
+      facilis. Repellendus labore ipsam ipsa sequi odio tempora, mollitia culpa,
+      omnis consectetur aliquid amet obcaecati sapiente eveniet saepe modi
+      adipisci a veniam velit et nihil qui. Sint ad totam vel, voluptatibus
+      veritatis blanditiis inventore vero animi provident, laborum alias sed
+      voluptate? Dolorum, illum ad! Alias, ullam tenetur, odit at et dicta
+      maiores odio suscipit enim sapiente consequatur eaque voluptatem qui.
+      Voluptates nihil iusto dolorem nostrum veritatis ab esse molestias cumque
+      beatae ad autem sunt quis sit iure laboriosam consectetur ducimus animi ut
+      non sint aliquam, tempore necessitatibus dolore sequi? Quisquam, error
+      sint laborum autem ducimus libero cumque totam similique laudantium ad,
+      ipsum veniam reiciendis odit! Fugiat iste nemo placeat eligendi, tenetur,
+      voluptatibus maiores minima exercitationem facilis amet recusandae!
+      Nesciunt, ratione corporis ullam tenetur, possimus assumenda illo non eos
+      officiis iure perferendis. Cumque ea laboriosam est rem sint natus, nisi
+      odio ipsam asperiores voluptate excepturi accusamus expedita provident
+      earum obcaecati reiciendis tempore voluptates nihil maiores nesciunt
+      laudantium velit. Neque, nulla ipsa esse odit perferendis illum tempore
+      fugit fugiat soluta dolor, veniam dolorem ipsam qui consequatur quam
+      consectetur debitis minus sed! Officia, veniam totam? Debitis in repellat
+      aperiam accusantium provident repellendus quae nobis enim nulla,
+      aspernatur sunt voluptas ad modi distinctio deserunt eum dolorum incidunt
+      quidem sit neque iste a? Iste, magni.
+    </p>
+  </body>
+  <script>
+    function changeBG(color) {
+      document.body.style.backgroundColor = color;
+      let txt = document.getElementsByClassName("text");
+      if (color == "#000000") {
+        for (let elm of txt) {
+          elm.style.color = "white";
+        }
+      } else {
+        for (let elm of txt) {
+          elm.style.color = "black";
+        }
+      }
+    }
+  </script>
+</html>
